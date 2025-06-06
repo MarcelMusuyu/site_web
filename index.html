@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Welcome to the Web App</h1>
+        <a href="pages/about.html">About</a>
+        <br/>
+        <br/>
+        <img src="img/j.png" width="200" height="200" alt="Description of image"/>
+        <h3>Mes Identités</h3>
+        <ul>
+            <li>Nom: John Doe</li>
+            <li>Prénom: John</li>
+            <li>Email: john.doe@example.com</li>
+            <li>Téléphone: +33 6 12 34 56 78</li>
+            <li>Adresse: 123 Rue de Paris, 75001 Paris, France</li>
+            <li>Date de naissance: 1er janvier 1990</li>
+            <li>Nationalité: Française</li>
+            <li>Genre: Masculin</li>
+            <li>Langues parlées: Français, Anglais, Espagnol</li>
+            <li>Permis de conduire: Oui</li>
+        </ul>
+        <hr/>
+        <h3>Ma description</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quis repellat laborum cum, explicabo temporibus impedit voluptate dolor modi iure optio error odit? Laboriosam, maiores asperiores corporis alias non a.</p>
+        <hr/>
+        <h3>Education</h3>
+        <ul>
+            <li>Université de la Réunion</li>
+            <li>Université de Paris</li>
+            <li>Université de Bordeaux</li>
+            <li>Université de Lille</li>
+            <li>Université de Strasbourg</li>
+            <li>Université de Lyon</li>
+            <li>Université de Marseille</li>
+            <li>Université de Toulouse</li>
+            <li>Université de Nice</li>
+        </ul>
+        <hr/>
+        <h3>Experience Professionelle</h3>
+        <ul>
+            <li>Développeur Web chez OpenAI</li>
+            <li>Ingénieur Logiciel chez Google</li>
+            <li>Data Scientist chez Facebook</li>
+            <li>Consultant IT chez IBM</li>
+            <li>Chef de Projet chez Capgemini</li>
+        </ul>
+        <hr/>
+        <h3>Mes competences</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>PHP</li>
+            <li>Ruby</li>
+            <li>React</li>
+            <li>Angular</li>
+        </ul>
+
+        <hr>
+        <br/>
+
+        <h2>Creation Identités</h2>
+
+        <form>
+            <label for ="nom">Nom: </label>
+            <input type="text" id="nom" placeholder="Saisir votre nom" />
+            <label for ="date">Date Naissance: </label>
+            <input type="date" id="date"  />
+            <br><br>
+            <label for ="photo">Photo: </label>
+            <input type="file" id="photo"  />
+            <label for ="pays">Pays: </label>
+            <select>
+                <option disabled selected > Selectioner votre Pays</option>
+                <option value="RDC">RDC</option>
+                <option value="FR">France</option>
+                <option value="USA">USA</option>
+                <option value="Mali">Mali</option>
+            </select>
+            <br><br>
+            <label>Genre: </label>
+            <input id="male" type="radio" required/>
+            <label for="male">Male </label>
+            <input id="female" type="radio" required/>
+            <label for="female">feminin </label>
+
+            <label>Mes Cours Prefere: </label>
+            <input id="math" type="checkbox" required/>
+            <label for="math">Mathématiques </label>
+            <input id="science" type="checkbox" required/>
+            <label for="science">Sciences </label>
+            <input id="literature" type="checkbox" required/>
+            <label for="literature">Littérature </label>
+            <input id="history" type="checkbox" required/>
+            <label for="history">Histoire </label>
+            <input id="geography" type="checkbox" required/>
+            <label for="geography">Géographie </label>
+
+
+            <br><br>
+            <label for ="email">Email: </label>
+            <input type="email" id="email" placeholder="Saisir votre address email" />
+            <label for ="password">Mot de passe: </label>
+            <input type="password" id="password" placeholder="Saisir votre mot de passe" />
+
+            <br><br>
+            <label for ="commentaire">Commentaire: </label>
+            <textarea id="commentaire" rows="5" placeholder="Saisir votre commentaire"></textarea>
+            <br><br>
+            <input style="background-color: blue; color:white;" type="submit" value="Créer Identité" />
+        </form>
+
+        <hr>
+        <h2>Mes Activités Hebdomadaires</h2>
+
+        <table style="border-collapse: collapse;border: 2px solid rgb(200, 200, 200);">
+            <thead>
+                <th style="border: 2px solid rgb(200, 200, 200);">Lundi</th>
+                <th style="border: 2px solid rgb(200, 200, 200);">Mardi</th>
+                <th style="border: 2px solid rgb(200, 200, 200);">Mercredi</th>
+                <th style="border: 2px solid rgb(200, 200, 200);">Jeudi</th>
+                <th style="border: 2px solid rgb(200, 200, 200);">Vendredi</th>
+                <th style="border: 2px solid rgb(200, 200, 200);">Samedi</th>
+                <th style="border: 2px solid rgb(200, 200, 200);">Dimanche</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Mathématiques</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Physique</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Chimie</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Informatique</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Histoire</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Repos</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Sortie en Famille</td>
+                </tr>
+                <tr>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Révision des Cours</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Travail de Groupe</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Projet Personnel</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Langues</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Activité Sportive</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Lecture</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Préparation pour la Semaine Suivante</td>
+                </tr>
+                <tr>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Mathématiques</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Physique</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Chimie</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Informatique</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Histoire</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Repos</td>
+                    <td style="border: 2px solid rgb(200, 200, 200);">Sortie en Famille</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <script src="" async defer></script> -->
+    </body>
+</html>
