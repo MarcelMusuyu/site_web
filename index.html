@@ -7,6 +7,12 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Marcel Nyembo">
+        <meta name="description" content="This page serves as a basic sample of web pages.">
+        <meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.png">
+        <meta property="og:description" content="This is an example page to demonstrate usage of metadata on web pages.">
+        <meta property="og:title" content="Metadata; The HTML &lt;head&gt;, on MDN">
+        <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="">
     </head>
     <body>
@@ -118,7 +124,7 @@
 
             <br><br>
             <label for ="commentaire">Commentaire: </label>
-            <textarea id="commentaire" rows="5" placeholder="Saisir votre commentaire"></textarea>
+            <textarea id="commentaire" rows="5" cols="70" placeholder="Saisir votre commentaire"></textarea>
             <br><br>
             <input style="background-color: blue; color:white;" type="submit" value="Créer Identité" />
         </form>
@@ -128,13 +134,19 @@
 
         <table style="border-collapse: collapse;border: 2px solid rgb(200, 200, 200);">
             <thead>
-                <th style="border: 2px solid rgb(200, 200, 200);">Lundi</th>
-                <th style="border: 2px solid rgb(200, 200, 200);">Mardi</th>
-                <th style="border: 2px solid rgb(200, 200, 200);">Mercredi</th>
-                <th style="border: 2px solid rgb(200, 200, 200);">Jeudi</th>
-                <th style="border: 2px solid rgb(200, 200, 200);">Vendredi</th>
-                <th style="border: 2px solid rgb(200, 200, 200);">Samedi</th>
-                <th style="border: 2px solid rgb(200, 200, 200);">Dimanche</th>
+                <tr>
+                    <th style="border: 2px solid rgb(200, 200, 200);" colspan="7" id="accessories"> <strong>Mes Activités Hebdomadaires</strong> </th>
+                </tr>
+                <tr>
+                    <th style="border: 2px solid rgb(200, 200, 200);">Lundi</th>
+                    <th style="border: 2px solid rgb(200, 200, 200);">Mardi</th>
+                    <th style="border: 2px solid rgb(200, 200, 200);">Mercredi</th>
+                    <th style="border: 2px solid rgb(200, 200, 200);">Jeudi</th>
+                    <th style="border: 2px solid rgb(200, 200, 200);">Vendredi</th>
+                    <th style="border: 2px solid rgb(200, 200, 200);">Samedi</th>
+                    <th style="border: 2px solid rgb(200, 200, 200);">Dimanche</th>
+                   
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -167,6 +179,24 @@
             </tbody>
         </table>
 
+
+        <br>
+        <hr>
+        <h2>Afficher un document Pdf</h2>
+        <object data="assets/documents/Certificate.pdf" type="application/pdf" width="700" height="700">
+            <p>You don't have a PDF plugin, but you can <a href="assets/documents/Certificate.pdf">download the PDF file.</a></p>
+        </object>
         <!-- <script src="" async defer></script> -->
+         <br>
+         <hr>
+         <h2>Afficher une video donnant votre description pour la societe</h2>
+         
+
+        <video controls width="400" height="400"
+            loop muted preload="auto"
+            poster="img/a.png">
+        <source src="assets/media/event.mp4" type="video/mp4">
+        <!-- <source src="event.webm" type="video/webm"> -->
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="assets/media/event.mp4">link to the video</a> instead.</p>
     </body>
 </html>
