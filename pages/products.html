@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Marcel Nyembo">
+        <meta name="description" content="This page serves as a basic sample of web pages.">
+        <meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.png">
+        <meta property="og:description" content="This is an example page to demonstrate usage of metadata on web pages.">
+        <meta property="og:title" content="Metadata; The HTML &lt;head&gt;, on MDN">
+        <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
+        <title>Produits</title>
+        <link rel="stylesheet" href="">
+        <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+           
+            li{
+                margin-bottom: 15px;
+            }
+            .header{
+                display: flex;
+                 align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                border-bottom: solid 1px; 
+                border-color: rgb(247, 235, 227);
+
+                flex-wrap: wrap;
+            }
+             ul {
+                list-style-type: none;
+            }
+
+            .navigation {
+                position: relative;
+                display: flex;
+               
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                transition: 0.5s;
+            }
+            .navigation a {
+                text-decoration: none;
+                color: rgb(5, 71, 102);
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
+                padding: 10px;
+                transition: 0.3s;
+            }
+            nav{
+                width: 90%;
+               
+            }
+            .btn-get-started {
+                font-family: "Roboto", sans-serif;
+                
+                letter-spacing: 1px;
+                text-decoration: none;
+                display: inline-block;
+                padding: 5px 10px 5px 10px;
+               
+                transition: 0.5s;
+                margin: 10px 0 0 20px;
+                color: #fff;
+                background: rgb(5, 71, 102);
+        }
+        .promotion{
+            text-align: center;
+            font-size: 24px;
+            color: rgb(5, 71, 102);
+            font-weight: bold;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+            color: rgb(50, 50, 50);
+            margin: 10px 0;
+            padding: 0 20px;
+
+        }
+        sup {
+            font-size: 24px;
+            color: rgb(5, 71, 102);
+            font-weight: bold;
+        }
+
+        img {
+           
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        main{
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 20px;
+           
+
+        }
+
+        </style>
+</head>
+<body>
+    <header style="border: solid 2px; border-color: rgb(247, 235, 227);">
+        <div class="header">
+            <div>
+                <img src="../img/address-book-new-2.ico" width="50" height="50" alt="Logo of the web app"/>
+                <sup><strong>BookStore</strong></sup>
+            </div>
+            
+            <h1>Welcome to our Web application</h1>
+           
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="pages/products.html">Produits</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Mon Panier<sup>🛒</sup></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main >
+        
+       <h2 class="promotion">Nos Livres</h2>
+       <div>
+              <p>Découvrez notre sélection de livres sur le développement web, incluant des ouvrages sur Angular, React, Java, et plus encore. Chaque livre est soigneusement choisi pour vous aider à améliorer vos compétences en programmation et en conception web.</p>
+              <p>Parcourez notre collection et trouvez le livre qui correspond à vos besoins d'apprentissage. Que vous soyez débutant ou développeur expérimenté, nous avons quelque chose pour vous.</p>
+                <p>Pour plus d'informations sur chaque livre, cliquez sur le lien "Voir plus". Vous pouvez également télécharger les livres directement en cliquant sur le lien "Télécharger".</p>
+       </div>
+      
+       <ul style="display:grid; grid-template-columns: 1fr 1fr 1fr;">
+           <li>
+                <img src="../img/Angular.jpg" alt="Livre 1" width="100" height="150"/>
+                <span>
+                    <p>Titre: Angular</p>
+                    <p>Auteur: Auteur 1</p>
+                    <p>Prix: 10€</p>
+                    <a href="products_details.html" >Voir plus</a>
+                    <br>
+                    <a href="../assets/documents/JavaScript.pdf" target="_blank">Télécharger</a>
+                </span>
+                
+                <button  type="button">Ajouter au panier</button>
+           </li>
+           <li>
+               <img src="../img/React.jpg" alt="Livre 2" width="100" height="150"/>
+               <p>Titre: React & React native</p>
+               <p>Auteur: Auteur 2</p>
+               <p>Prix: 15€</p>
+               <a href="products_details.html" >Voir plus</a>
+               <br>
+               <a href="../assets/documents/JavaScript.pdf" target="_blank">Télécharger</a>
+               <button type="button">Ajouter au panier</button>
+           </li>
+           <li>
+               <img src="../img/Java.jpg" alt="Livre 3" width="100" height="150"/>
+               <p>Titre: Java Fundamental</p>
+               <p>Auteur: Auteur 3</p>
+               <p>Prix: 20€</p>
+               <a href="products_details.html" >Voir plus</a>
+               <br>
+               <a href="../assets/documents/JavaScript.pdf" target="_blank">Télécharger</a>
+               <button type="button">Ajouter au panier</button>
+           </li>
+           <li>
+               <img src="../img/Java_CookBook.jpg" alt="Livre 4" width="100" height="150"/>
+               <p>Titre: Java CookBook</p>
+               <p>Auteur: Auteur 4</p>
+               <p>Prix: 25€</p>
+               <a href="products_details.html" >Voir plus</a>
+               <br>
+               <a href="../assets/documents/JavaScript.pdf target="_blank">Télécharger</a>
+               <button type="button">Ajouter au panier</button>
+           </li>
+           <li>
+               <img src="../img/JavaScript.jpg" alt="Livre 5" width="100" height="150"/>
+               <p>Titre: Dynamic Web Development with JavaScript</p>
+               <p>Auteur: Auteur 5</p>
+               <p>Prix: 30€</p>
+               <a href="products_details.html" >Voir plus</a>
+               <br>
+               <a href="../assets/documents/JavaScript.pdf" target="_blank">Télécharger</a>
+               <button type="button">Ajouter au panier</button>
+           </li>
+           <li>
+            <img src="../img/Real_Time_DB.jpg" alt="Livre 5" width="100" height="150"/>
+            <p>Titre: Real Time Database System</p>
+            <p>Auteur: Auteur 5</p>
+            <p>Prix: 30€</p>
+            <a href="https://www.example.com/book5" target="_blank">Voir plus</a>
+            <br>
+            <a href="https://www.example.com/book5/download" target="_blank">Télécharger</a>
+            <button type="button">Ajouter au panier</button>
+        </li>
+        <li>
+            <img src="../img/Web_Design.jpg" alt="Livre 5" width="100" height="150"/>
+            <p>Titre: Web Design</p>
+            <p>Auteur: Auteur 5</p>
+            <p>Prix: 30€</p>
+            <a href="products_details.html" >Voir plus</a>
+            <br>
+            <a href="../assets/documents/JavaScript.pdf" target="_blank">Télécharger</a>
+            <button type="button">Ajouter au panier</button>
+        </li>
+        <li>
+            <img src="../img/SQL.jpg" alt="Livre 5" width="100" height="150"/>
+            <p>Titre: Structured Query Language SQL</p>
+            <p>Auteur: Auteur 5</p>
+            <p>Prix: 30€</p>
+            <a href="products_details.html" >Voir plus</a>
+            <br>
+            <a href="../assets/documents/JavaScript.pdf" target="_blank">Télécharger</a>
+            <button type="button">Ajouter au panier</button>
+        </li>
+       </ul>
+    </main>
+    <footer style="border: solid 2px; border-color: rgb(216, 188, 168);">
+        <p>&copy; 2023 Web App. All rights reserved.</p>
+        <p>Contact us at: <a href="mailto:contact@webapp.com">contact@webapp.com</a></p>
+        <p>Follow us on <a href="https://twitter.com/webapp" target="_blank">Twitter</a> and <a href="https://facebook.com/webapp" target="_blank">Facebook</a>.</p>
+        <p>Last updated: October 2023</p>
+        <p>Version: 1.0.0</p>
+        <p>License: <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+        <p>Privacy Policy: <a href="privacy.html" target="_blank">View Privacy Policy</a></p>
+        <p>Terms of Service: <a href="terms.html" target="_blank">View Terms of Service</a></p>
+        <p>For more information, visit our <a href="https://www.webapp.com" target="_blank">official website</a>.</p>
+
+    </footer>
+</body>
+</html>

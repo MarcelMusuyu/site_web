@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Acceuil</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Marcel Nyembo">
@@ -14,189 +14,304 @@
         <meta property="og:title" content="Metadata; The HTML &lt;head&gt;, on MDN">
         <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>Welcome to the Web App</h1>
-        <a href="pages/about.html">About</a>
-        <br/>
-        <br/>
-        <img src="img/j.png" width="200" height="200" alt="Description of image"/>
-        <h3>Mes Identités</h3>
-        <ul>
-            <li>Nom: John Doe</li>
-            <li>Prénom: John</li>
-            <li>Email: john.doe@example.com</li>
-            <li>Téléphone: +33 6 12 34 56 78</li>
-            <li>Adresse: 123 Rue de Paris, 75001 Paris, France</li>
-            <li>Date de naissance: 1er janvier 1990</li>
-            <li>Nationalité: Française</li>
-            <li>Genre: Masculin</li>
-            <li>Langues parlées: Français, Anglais, Espagnol</li>
-            <li>Permis de conduire: Oui</li>
-        </ul>
-        <hr/>
-        <h3>Ma description</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quis repellat laborum cum, explicabo temporibus impedit voluptate dolor modi iure optio error odit? Laboriosam, maiores asperiores corporis alias non a.</p>
-        <hr/>
-        <h3>Education</h3>
-        <ul>
-            <li>Université de la Réunion</li>
-            <li>Université de Paris</li>
-            <li>Université de Bordeaux</li>
-            <li>Université de Lille</li>
-            <li>Université de Strasbourg</li>
-            <li>Université de Lyon</li>
-            <li>Université de Marseille</li>
-            <li>Université de Toulouse</li>
-            <li>Université de Nice</li>
-        </ul>
-        <hr/>
-        <h3>Experience Professionelle</h3>
-        <ul>
-            <li>Développeur Web chez OpenAI</li>
-            <li>Ingénieur Logiciel chez Google</li>
-            <li>Data Scientist chez Facebook</li>
-            <li>Consultant IT chez IBM</li>
-            <li>Chef de Projet chez Capgemini</li>
-        </ul>
-        <hr/>
-        <h3>Mes competences</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C++</li>
-            <li>SQL</li>
-            <li>PHP</li>
-            <li>Ruby</li>
-            <li>React</li>
-            <li>Angular</li>
-        </ul>
+        <style>
+            li{
+                margin-bottom: 15px;
+            }
+            .header{
+                display: flex;
+                 align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                border-bottom: solid 1px; 
+                border-color: rgb(247, 235, 227);
 
-        <hr>
-        <br/>
+                flex-wrap: wrap;
+            }
+             /* ul {
+                list-style-type: none;
+            } */
 
-        <h2>Creation Identités</h2>
+            .navigation {
+                position: relative;
+                display: flex;
+               
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                transition: 0.5s;
+            }
+            .navigation a {
+                text-decoration: none;
+                color: rgb(5, 71, 102);
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
+                padding: 10px;
+                transition: 0.3s;
+            }
+            nav{
+                width: 90%;
+               
+            }
+            .btn-get-started {
+                font-family: "Roboto", sans-serif;
+                
+                letter-spacing: 1px;
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px 28px 11px 28px;
+               
+                transition: 0.5s;
+                margin: 10px 0 0 60px;
+                color: #fff;
+                background: rgb(5, 71, 102);
+        }
+        .promotion{
+            text-align: center;
+            font-size: 24px;
+            color: rgb(5, 71, 102);
+            font-weight: bold;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+            color: rgb(50, 50, 50);
+            margin: 10px 0;
+            padding: 0 20px;
 
-        <form>
-            <label for ="nom">Nom: </label>
-            <input type="text" id="nom" placeholder="Saisir votre nom" />
-            <label for ="date">Date Naissance: </label>
-            <input type="date" id="date"  />
-            <br><br>
-            <label for ="photo">Photo: </label>
-            <input type="file" id="photo"  />
-            <label for ="pays">Pays: </label>
-            <select>
-                <option disabled selected > Selectioner votre Pays</option>
-                <option value="RDC">RDC</option>
-                <option value="FR">France</option>
-                <option value="USA">USA</option>
-                <option value="Mali">Mali</option>
-            </select>
-            <br><br>
-            <label>Genre: </label>
-            <input id="male" type="radio" required/>
-            <label for="male">Male </label>
-            <input id="female" type="radio" required/>
-            <label for="female">feminin </label>
+        }
+        sup {
+            font-size: 24px;
+            color: rgb(5, 71, 102);
+            font-weight: bold;
+        }
 
-            <label>Mes Cours Prefere: </label>
-            <input id="math" type="checkbox" required/>
-            <label for="math">Mathématiques </label>
-            <input id="science" type="checkbox" required/>
-            <label for="science">Sciences </label>
-            <input id="literature" type="checkbox" required/>
-            <label for="literature">Littérature </label>
-            <input id="history" type="checkbox" required/>
-            <label for="history">Histoire </label>
-            <input id="geography" type="checkbox" required/>
-            <label for="geography">Géographie </label>
+        footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 20px;
+           
+
+        }
+
+        </style>
+</head>
+<body>
+    <header style="border: solid 2px; border-color: rgb(247, 235, 227);">
+        <div class="header">
+            <div>
+                <img src="img/address-book-new-2.ico" width="50" height="50" alt="Logo of the web app"/>
+                <sup><strong>BookStore</strong></sup>
+            </div>
+            
+            <h1>Welcome to our Web application</h1>
+           
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="pages/products.html">Produits</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Mon Panier<sup>🛒</sup></a></li>
+            </ul>
+        </nav>
+    </header>
+       
+       <main>
+            <h2>Bienvenue sur notre application web</h2>
+            <p>Cette application est un exemple de page web simple avec des fonctionnalités de base.</p>
+        
+        
+            <br/>
+            <br/>
+            <img src="img/j.png" width="200" height="200" alt="Description of image"/>
+            <h3>Mes Identités</h3>
+            <ul>
+                <li>Nom: John Doe</li>
+                <li>Prénom: John</li>
+                <li>Email: john.doe@example.com</li>
+                <li>Téléphone: +33 6 12 34 56 78</li>
+                <li>Adresse: 123 Rue de Paris, 75001 Paris, France</li>
+                <li>Date de naissance: 1er janvier 1990</li>
+                <li>Nationalité: Française</li>
+                <li>Genre: Masculin</li>
+                <li>Langues parlées: Français, Anglais, Espagnol</li>
+                <li>Permis de conduire: Oui</li>
+            </ul>
+            <hr/>
+            <h3>Ma description</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quis repellat laborum cum, explicabo temporibus impedit voluptate dolor modi iure optio error odit? Laboriosam, maiores asperiores corporis alias non a.</p>
+            <hr/>
+            <h3>Education</h3>
+            <ul>
+                <li>Université de la Réunion</li>
+                <li>Université de Paris</li>
+                <li>Université de Bordeaux</li>
+                <li>Université de Lille</li>
+                <li>Université de Strasbourg</li>
+                <li>Université de Lyon</li>
+                <li>Université de Marseille</li>
+                <li>Université de Toulouse</li>
+                <li>Université de Nice</li>
+            </ul>
+            <hr/>
+            <h3>Experience Professionelle</h3>
+            <ul>
+                <li>Développeur Web chez OpenAI</li>
+                <li>Ingénieur Logiciel chez Google</li>
+                <li>Data Scientist chez Facebook</li>
+                <li>Consultant IT chez IBM</li>
+                <li>Chef de Projet chez Capgemini</li>
+            </ul>
+            <hr/>
+            <h3>Mes competences</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>SQL</li>
+                <li>PHP</li>
+                <li>Ruby</li>
+                <li>React</li>
+                <li>Angular</li>
+            </ul>
+
+            <hr>
+            <br/>
+
+            <h2>Creation Identités</h2>
+
+            <form>
+                <label for ="nom">Nom: </label>
+                <input type="text" id="nom" placeholder="Saisir votre nom" />
+                <label for ="date">Date Naissance: </label>
+                <input type="date" id="date"  />
+                <br><br>
+                <label for ="photo">Photo: </label>
+                <input type="file" id="photo"  />
+                <label for ="pays">Pays: </label>
+                <select>
+                    <option disabled selected > Selectioner votre Pays</option>
+                    <option value="RDC">RDC</option>
+                    <option value="FR">France</option>
+                    <option value="USA">USA</option>
+                    <option value="Mali">Mali</option>
+                </select>
+                <br><br>
+                <label>Genre: </label>
+                <input id="male" type="radio" required/>
+                <label for="male">Male </label>
+                <input id="female" type="radio" required/>
+                <label for="female">feminin </label>
+
+                <label>Mes Cours Prefere: </label>
+                <input id="math" type="checkbox" required/>
+                <label for="math">Mathématiques </label>
+                <input id="science" type="checkbox" required/>
+                <label for="science">Sciences </label>
+                <input id="literature" type="checkbox" required/>
+                <label for="literature">Littérature </label>
+                <input id="history" type="checkbox" required/>
+                <label for="history">Histoire </label>
+                <input id="geography" type="checkbox" required/>
+                <label for="geography">Géographie </label>
 
 
-            <br><br>
-            <label for ="email">Email: </label>
-            <input type="email" id="email" placeholder="Saisir votre address email" />
-            <label for ="password">Mot de passe: </label>
-            <input type="password" id="password" placeholder="Saisir votre mot de passe" />
+                <br><br>
+                <label for ="email">Email: </label>
+                <input type="email" id="email" placeholder="Saisir votre address email" />
+                <label for ="password">Mot de passe: </label>
+                <input type="password" id="password" placeholder="Saisir votre mot de passe" />
 
-            <br><br>
-            <label for ="commentaire">Commentaire: </label>
-            <textarea id="commentaire" rows="5" cols="70" placeholder="Saisir votre commentaire"></textarea>
-            <br><br>
-            <input style="background-color: blue; color:white;" type="submit" value="Créer Identité" />
-        </form>
+                <br><br>
+                <label for ="commentaire">Commentaire: </label>
+                <textarea id="commentaire" rows="5" cols="70" placeholder="Saisir votre commentaire"></textarea>
+                <br><br>
+                <input style="background-color: blue; color:white;" type="submit" value="Créer Identité" />
+            </form>
 
-        <hr>
-        <h2>Mes Activités Hebdomadaires</h2>
+            <hr>
+            <h2>Mes Activités Hebdomadaires</h2>
 
-        <table style="border-collapse: collapse;border: 2px solid rgb(200, 200, 200);">
-            <thead>
-                <tr>
-                    <th style="border: 2px solid rgb(200, 200, 200);" colspan="7" id="accessories"> <strong>Mes Activités Hebdomadaires</strong> </th>
-                </tr>
-                <tr>
-                    <th style="border: 2px solid rgb(200, 200, 200);">Lundi</th>
-                    <th style="border: 2px solid rgb(200, 200, 200);">Mardi</th>
-                    <th style="border: 2px solid rgb(200, 200, 200);">Mercredi</th>
-                    <th style="border: 2px solid rgb(200, 200, 200);">Jeudi</th>
-                    <th style="border: 2px solid rgb(200, 200, 200);">Vendredi</th>
-                    <th style="border: 2px solid rgb(200, 200, 200);">Samedi</th>
-                    <th style="border: 2px solid rgb(200, 200, 200);">Dimanche</th>
-                   
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Mathématiques</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Physique</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Chimie</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Informatique</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Histoire</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Repos</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Sortie en Famille</td>
-                </tr>
-                <tr>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Révision des Cours</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Travail de Groupe</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Projet Personnel</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Langues</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Activité Sportive</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Lecture</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Préparation pour la Semaine Suivante</td>
-                </tr>
-                <tr>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Mathématiques</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Physique</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Cours de Chimie</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Informatique</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Histoire</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Repos</td>
-                    <td style="border: 2px solid rgb(200, 200, 200);">Sortie en Famille</td>
-                </tr>
-            </tbody>
-        </table>
+            <table style="border-collapse: collapse;border: 2px solid rgb(200, 200, 200);">
+                <thead>
+                    <tr>
+                        <th style="border: 2px solid rgb(200, 200, 200);" colspan="7" id="accessories"> <strong>Mes Activités Hebdomadaires</strong> </th>
+                    </tr>
+                    <tr>
+                        <th style="border: 2px solid rgb(200, 200, 200);">Lundi</th>
+                        <th style="border: 2px solid rgb(200, 200, 200);">Mardi</th>
+                        <th style="border: 2px solid rgb(200, 200, 200);">Mercredi</th>
+                        <th style="border: 2px solid rgb(200, 200, 200);">Jeudi</th>
+                        <th style="border: 2px solid rgb(200, 200, 200);">Vendredi</th>
+                        <th style="border: 2px solid rgb(200, 200, 200);">Samedi</th>
+                        <th style="border: 2px solid rgb(200, 200, 200);">Dimanche</th>
+                    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Cours de Mathématiques</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Cours de Physique</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Cours de Chimie</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Informatique</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Histoire</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Repos</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Sortie en Famille</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Révision des Cours</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Travail de Groupe</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Projet Personnel</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Cours de Langues</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Activité Sportive</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Lecture</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Préparation pour la Semaine Suivante</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Cours de Mathématiques</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Cours de Physique</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Cours de Chimie</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Informatique</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Cours d'Histoire</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Repos</td>
+                        <td style="border: 2px solid rgb(200, 200, 200);">Sortie en Famille</td>
+                    </tr>
+                </tbody>
+            </table>
 
 
-        <br>
-        <hr>
-        <h2>Afficher un document Pdf</h2>
-        <object data="assets/documents/Certificate.pdf" type="application/pdf" width="700" height="700">
-            <p>You don't have a PDF plugin, but you can <a href="assets/documents/Certificate.pdf">download the PDF file.</a></p>
-        </object>
-        <!-- <script src="" async defer></script> -->
-         <br>
-         <hr>
-         <h2>Afficher une video donnant votre description pour la societe</h2>
-         
+            <br>
+            <hr>
+            
+            
+            <h2>Afficher une video donnant votre description pour la societe</h2>
+            
 
-        <video controls width="400" height="400"
-            loop muted preload="auto"
-            poster="img/a.png">
-        <source src="assets/media/event.mp4" type="video/mp4">
-        <!-- <source src="event.webm" type="video/webm"> -->
-        <p>Your browser doesn't support HTML5 video. Here is a <a href="assets/media/event.mp4">link to the video</a> instead.</p>
+            <video controls width="400" height="400"
+                loop muted preload="auto"
+                poster="img/a.png">
+                <source src="assets/media/event.mp4" type="video/mp4">
+
+                <!-- <source src="event.webm" type="video/webm"> -->
+                <p>Your browser doesn't support HTML5 video. Here is a <a href="assets/media/event.mp4">link to the video</a> instead.</p>
+            </video>
+        </main>
+        <footer>
+            <p>&copy; 2023 Web App. All rights reserved.</p>
+            <p>Contact us at: <a href="mailto:contact@webapp.com">contact@webapp.com</a></p>
+            <p>Follow us on <a href="https://twitter.com/webapp" target="_blank">Twitter</a> and <a href="https://facebook.com/webapp" target="_blank">Facebook</a>.</p>
+            <p>Last updated: October 2023</p>
+            <p>Version: 1.0.0</p>
+            <p>License: <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+            <p>Privacy Policy: <a href="privacy.html" target="_blank">View Privacy Policy</a></p>
+            <p>Terms of Service: <a href="terms.html" target="_blank">View Terms of Service</a></p>
+            <p>For more information, visit our <a href="https://www.webapp.com" target="_blank">official website</a>.</p>
+
+        </footer>
     </body>
 </html>
